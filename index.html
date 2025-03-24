@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematika</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Judul website  -->
+    <header class="main-header">
+        <h1>Katik <span>Kalkulator Matematika</span> </h1>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+        <!-- Section intro atau deskripsi singkat -->
+        <section class="intro">
+            <h2>Selamat datang di Katik</h2>
+            <p>
+                Hai Sobat, Selamat datang dikatik :) <br>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+            </p>
+        </section>
+
+        <!-- Section kalkulator luas dan keliling -->
+        <section class="calculator">
+            <!-- Section hitung luas persegi -->
+            <section class="square-area">
+                <div class="calculator-title-reset">
+                    <header>
+                        <h3>Luas Persegi</h3>
+                    </header>
+                    <button onclick="resetSquareArea()">Reset</button>
+                </div>
+
+                <article class="square-info">
+                    <div class="formula-section">
+                        <p>Rumus Luas Persegi yaitu : <strong>L = S x S</strong></p>
+                        <div>
+                            <p><strong>Di mana :</strong></p>
+                            <ul>
+                                <li><strong>L</strong> = Luas</li>
+                                <li><strong>S</strong> = Sisi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="calculation-section">
+                        <h4>Hitung Luas Persegi</h4>
+                        <form id="form-square-area">
+                            <input id="input-square-area" type="number" placeholder="Nilai Sisi">
+                            <button type="submit">Hitung</button>
+                        </form>
+                    </div>
+
+                    <div class="result-section">
+                        <h4>Hasil :</h4>
+                        <div>
+                            <span id="result-square-area"></span>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+            
+            <!-- Section hitung keliling persegi -->
+            <section class="square-perimeter">
+                <div class="calculator-title-reset">
+                    <header>
+                        <h3>Keliling Persegi</h3>
+                    </header>
+                    <button onclick="resetSquarePerimeter()">Reset</button>
+                </div>
+
+                <article class="square-info">
+                    <div class="formula-section">
+                        <p>Rumus Luas Persegi yaitu : <strong>K = 4 x S</strong></p>
+                        <div>
+                            <p><strong>Di mana :</strong></p>
+                            <ul>
+                                <li><strong>K</strong> = Keliling</li>
+                                <li><strong>S</strong> = Sisi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="calculation-section">
+                        <h4>Hitung Keliling Persegi</h4>
+                        <form id="form-square-perimeter" action="">
+                            <input id="input-square-perimeter" type="number" placeholder="Nilai Sisi">
+                            <button type="submit">Hitung</button>
+                        </form>
+                    </div>
+
+                    <div class="result-section">
+                        <h4>Hasil :</h4>
+                        <div>
+                            <span id="result-square-perimeter"></span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Alfarozi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
